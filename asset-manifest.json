@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/site/static/css/main.07cda44a.chunk.css",
-    "main.js": "/site/static/js/main.ba035d4a.chunk.js",
-    "main.js.map": "/site/static/js/main.ba035d4a.chunk.js.map",
+    "main.css": "/site/static/css/main.276091bc.chunk.css",
+    "main.js": "/site/static/js/main.b44364ef.chunk.js",
+    "main.js.map": "/site/static/js/main.b44364ef.chunk.js.map",
     "runtime-main.js": "/site/static/js/runtime-main.9f044e7a.js",
     "runtime-main.js.map": "/site/static/js/runtime-main.9f044e7a.js.map",
     "static/js/2.68ec3220.chunk.js": "/site/static/js/2.68ec3220.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.4e420bec.chunk.js": "/site/static/js/3.4e420bec.chunk.js",
     "static/js/3.4e420bec.chunk.js.map": "/site/static/js/3.4e420bec.chunk.js.map",
     "index.html": "/site/index.html",
-    "static/css/main.07cda44a.chunk.css.map": "/site/static/css/main.07cda44a.chunk.css.map",
+    "static/css/main.276091bc.chunk.css.map": "/site/static/css/main.276091bc.chunk.css.map",
     "static/js/2.68ec3220.chunk.js.LICENSE.txt": "/site/static/js/2.68ec3220.chunk.js.LICENSE.txt",
     "static/media/index.css": "/site/static/media/OceanRush.f0727d14.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.9f044e7a.js",
     "static/js/2.68ec3220.chunk.js",
-    "static/css/main.07cda44a.chunk.css",
-    "static/js/main.ba035d4a.chunk.js"
+    "static/css/main.276091bc.chunk.css",
+    "static/js/main.b44364ef.chunk.js"
   ]
 }
