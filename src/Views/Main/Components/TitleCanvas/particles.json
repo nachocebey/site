@@ -1,0 +1,46 @@
+{
+  "fpsLimit": 60,
+  "interactivity": {
+    "events": {
+      "onClick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "onHover": {
+        "enable": true,
+        "mode": "grab",
+        "parallax": {
+          "enable": true,
+          "force": 60
+        }
+      }
+    },
+    "modes": {
+      "bubble": {
+        "distance": 400,
+        "duration": 2,
+        "opacity": 0.8,
+        "size": 40
+      },
+      "grab": {
+        "distance": 400
+      }
+    }
+  },
+  "particles": {
+    "links": {
+      "enable": true,
+      "distance": 120
+    },
+    "move": {
+      "enable": true,
+      "speed": 7,
+      "outModes": {
+        "default": "bounce"
+      }
+    },
+    "size": {
+      "value": 1
+    }
+  }
+}

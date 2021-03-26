@@ -2,25 +2,38 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import Slide from '@material-ui/core/Slide';
+import Grid from '@material-ui/core/Grid';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import './Styles.css';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
+  customizeToolbar: {
+    paddingTop: 40,
   },
   title: {
     flexGrow: 1,
+    justifyContent: 'flex-end',
   },
   appbarContainer: {
-    backgroundColor: 'RGBA(255,255,255,0.1)',
+    // background: 'linear-gradient(to top, #000000 0%, #6A040F 200%)',
+    backgroundColor: '#000000',
+  },
+  contactButton: {
+    backgroundColor: 'rgb(120, 120, 120)',
+    borderRadius: 25,
+    marginRight: 10,
+    padding: '13px 30px 13px 30px',
+    textTransform: 'none',
+
+    '&:hover': {
+      backgroundColor: '#fff',
+      color: '#000000',
+      boxShadow: 'none',
+    },
   },
 }));
 
@@ -32,11 +45,16 @@ function HeaderAppBar() {
     <div className={classes.root}>
       <Slide appear={false} direction="down" in={!trigger}>
         <AppBar position="static" className={classes.appbarContainer}>
-          <Toolbar>
-            <Typography variant="h6" className={classes.title}>
-              News
-            </Typography>
-            <Button color="inherit">Login</Button>
+          <Toolbar className={classes.customizeToolbar}>
+            <Grid container justify="flex-end" alignItems="center">
+              {/* <Button size="large" variant="contained" className={classes.contactButton}>
+                Contact
+              </Button> */}
+
+              <a href="/#" className="rainbow-button" alt="Contact">
+                {null}
+              </a>
+            </Grid>
           </Toolbar>
         </AppBar>
       </Slide>
