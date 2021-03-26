@@ -2,7 +2,7 @@
 Hi!
 My name is Nacho Cebey, I am a front-end developer from Barcelona (Spain).
 If you are reading this and you don't have much idea what you are looking at, let me explain it to you.
-This project is basically my portfolio. I use this project as a place to show people my code, for those who are interested in my way of working. On the other hand, I also use this project as a sandbox in which to test new components, technologies or simply put myself to the test. If you have any questions or want to share anything to me, do not hesitate to contact me through mail (n.cebey@gmail.com), github (/ nachocebey) or LinkedIn (www.linkedin.com/in/nachoch).
+This project is basically my portfolio. I use this project as a place to show people my code, for those who are interested in my way of working. On the other hand, I also use this project as a sandbox in which to test new components, technologies or simply put myself to the test. If you have any questions or want to share anything to me, do not hesitate to contact me through mail (n.cebey@gmail.com), [my GitHub page](https://github.com/nachocebey) or [my LinkedIn](www.linkedin.com/in/nachoch).
 
 # Getting Started with Create React App
 
