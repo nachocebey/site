@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 import TitleCanvas from './Components/TitleCanvas/TitleCanvas';
+import SimpleDescription from './Components/SimpleDescription/SimpleDescription';
+import { useTranslation } from 'react-i18next';
 
 export class Main extends Component {
   render() {
@@ -10,6 +12,7 @@ export class Main extends Component {
       <>
         <TitleCanvas />
         <Container>
+          <SimpleDescription />
           <Box my={2}>
             {[...new Array(50)]
               .map(
