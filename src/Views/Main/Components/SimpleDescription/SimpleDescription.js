@@ -1,28 +1,18 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { decrement, increment } from "../../../../Redux/Reducers/counterSlice";
+import { plusOne } from "../../../../Redux/index";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
-export default function SimpleDescription() {
-  const count = useSelector((state) => state.counter.value);
+function SimpleDescription() {
+  const state = useSelector((state) => state.counter);
   const dispatch = useDispatch();
+  console.log(state.counter);
 
   return (
     <div>
-      <div>
-        <button
-          aria-label="Increment value"
-          onClick={() => dispatch(increment())}
-        >
-          Increment
-        </button>
-        <span>{count}</span>
-        <button
-          aria-label="Decrement value"
-          onClick={() => dispatch(decrement())}
-        >
-          Decrement
-        </button>
-      </div>
+      <button onClick={() => dispatch(plusOne())}>Car</button>
     </div>
   );
 }
+
+export default SimpleDescription;

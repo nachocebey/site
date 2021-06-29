@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
-import TitleCanvas from './Components/TitleCanvas/TitleCanvas';
-import SimpleDescription from './Components/SimpleDescription/SimpleDescription';
+import Box from "@material-ui/core/Box";
+import Container from "@material-ui/core/Container";
+import TitleCanvas from "./Components/TitleCanvas/TitleCanvas";
+import SimpleDescription  from "./Components/SimpleDescription/SimpleDescription";
 
 export class Main extends Component {
   render() {
@@ -20,7 +20,7 @@ export class Main extends Component {
                     Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
                     Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
               )
-              .join('\n')}
+              .join("\n")}
           </Box>
         </Container>
       </>
