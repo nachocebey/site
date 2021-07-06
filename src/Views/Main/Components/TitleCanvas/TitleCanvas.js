@@ -22,7 +22,7 @@ const styles = {
     marginBottom: 'unset',
   },
   divider: {
-    borderBottom: '5px solid red',
+    borderBottom: '5px solid #d90429',
     width: '25%',
     minWidth: '200px',
     zIndex: 10,

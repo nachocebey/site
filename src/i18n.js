@@ -1,7 +1,7 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import translationES from "./locales/es_ES/index.js";
-import translationEN from "./locales/en_EN/index.js";
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import translationES from './locales/es_ES/index.js';
+import translationEN from './locales/en_EN/index.js';
 
 const resources = {
   es_ES: {
@@ -14,7 +14,7 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  fallbackLng: "en_EN",
+  fallbackLng: 'en_EN',
   debug: true,
 });
 
