@@ -1,29 +1,21 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import translationEN from './locales/en/index.json';
-import translationDE from './locales/de/index.json';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import translationES from "./locales/es_ES/index.js";
+import translationEN from "./locales/en_EN/index.js";
 
-// the translations
 const resources = {
-  en: {
-    translation: translationEN,
+  es_ES: {
+    translation: translationES,
   },
-  de: {
-    translation: translationDE,
+  en_EN: {
+    translation: translationEN,
   },
 };
 
-i18n
-  // load translation using http -> see /public/locales (i.e. https://github.com/i18next/react-i18next/tree/master/example/react/public/locales)
-  // learn more: https://github.com/i18next/i18next-http-backend
-  // want your translations to be loaded from a professional CDN? => https://github.com/locize/react-tutorial#step-2---use-the-locize-cdn
-  .use(initReactI18next)
-  // init i18next
-  // for all options read: https://www.i18next.com/overview/configuration-options
-  .init({
-    resources,
-    fallbackLng: 'en',
-    debug: true,
-  });
+i18n.use(initReactI18next).init({
+  resources,
+  fallbackLng: "en_EN",
+  debug: true,
+});
 
 export default i18n;

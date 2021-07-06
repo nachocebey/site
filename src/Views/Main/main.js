@@ -1,18 +1,21 @@
-import React, { Component, Suspense } from 'react';
+import React, { Component, Suspense } from "react";
 
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
-import TitleCanvas from './Components/TitleCanvas/TitleCanvas';
-import SimpleDescription from './Components/SimpleDescription/SimpleDescription';
+import Box from "@material-ui/core/Box";
+import Container from "@material-ui/core/Container";
+import TitleCanvas from "./Components/TitleCanvas/TitleCanvas";
+import SimpleDescription from "./Components/SimpleDescription/SimpleDescription";
+import Navbar from "./Components/Navbar/Navbar";
 
 export class Main extends Component {
   render() {
     return (
       <>
-        <TitleCanvas />
+        <Navbar />
         {/* Suspense should be on a superior container like App or Root, but it doeasens seem to get along with React-Particles */}
         <Suspense fallback="loading">
           <Container>
+        <TitleCanvas />
+
             <SimpleDescription />
             <Box my={2}>
               {[...new Array(50)]
@@ -22,7 +25,7 @@ export class Main extends Component {
                     Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
                     Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
                 )
-                .join('\n')}
+                .join("\n")}
             </Box>
           </Container>
         </Suspense>

@@ -49,7 +49,7 @@ function TitleCanvas(props) {
           <animated.div
             onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
             onMouseLeave={() => set({ xys: [0, 0, 1] })}
-            style={{ transform: propss.xys.interpolate(trans) }}
+            style={{ transform: propss.xys.to(trans) }}
           >
             <Grid container className="general-height" direction="column" justify="center" alignItems="center">
               <h1 className={`${classes.titleName} ${classes.titleFont}`}>Nacho Cebey</h1>

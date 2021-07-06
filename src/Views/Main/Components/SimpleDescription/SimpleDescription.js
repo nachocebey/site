@@ -9,8 +9,8 @@ function SimpleDescription() {
 
   return (
     <div>
-      <button onClick={() => changeLanguage('de')}>de</button>
-      <button onClick={() => changeLanguage('en')}>en</button>
+      <button onClick={() => changeLanguage('es_ES')}>ES</button>
+      <button onClick={() => changeLanguage('en_EN')}>EN</button>
       <h1>{t('title')}</h1>
     </div>
   );
