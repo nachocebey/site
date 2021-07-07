@@ -8,10 +8,11 @@ import LenguageSelector from './Components/LenguageSelector';
 import clsx from 'clsx';
 const styles = {
   root: {
-    // background: 'white',
-    // background: "grey",
-    // background: "black",
-    backgroundColor: "transparent"
+    backgroundColor: 'transparent',
+  },
+  rightToolbar: {
+    marginLeft: 'auto',
+    marginRight: -12,
   },
 };
 
@@ -23,7 +24,9 @@ function Navbar(props) {
     <Slide appear={false} direction="down" in={!trigger}>
       <AppBar className={clsx(classes.root)}>
         <Toolbar>
-          <LenguageSelector />
+          <section className={classes.rightToolbar}>
+            <LenguageSelector />
+          </section>
         </Toolbar>
       </AppBar>
     </Slide>
