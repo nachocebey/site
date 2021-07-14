@@ -17,6 +17,12 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: "center",
   },
+  body: {
+    color: "#adb5bd",
+  },
+  title: {
+    fontSize: "4rem",
+  },
 }));
 
 function SimpleDescription() {
@@ -31,10 +37,10 @@ function SimpleDescription() {
       className={classes.descriptionContainer}
     >
       <Grid item xs={6} className={classes.descriptionBox}>
-        <Typography variant="h5" gutterBottom>
-          Nacho Cebey Honorato
+        <Typography variant="h5" className={classes.title} gutterBottom>
+          ¡Hello world!
         </Typography>
-        <Typography variant="body1" gutterBottom>
+        <Typography variant="body1" className={classes.body}gutterBottom>
           body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
           blanditiis tenetur unde suscipit, quam beatae rerum inventore
           consectetur, neque doloribus, cupiditate numquam dignissimos laborum
