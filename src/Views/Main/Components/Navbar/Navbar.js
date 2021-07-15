@@ -22,8 +22,8 @@ function Navbar(props) {
 
   return (
     <Slide appear={false} direction="down" in={!trigger}>
-      <AppBar className={clsx(classes.root)}>
-        <Toolbar>
+      <AppBar className={clsx(classes.root)} elevation={0}>
+        <Toolbar >
           <section className={classes.rightToolbar}>
             <LenguageSelector />
           </section>
