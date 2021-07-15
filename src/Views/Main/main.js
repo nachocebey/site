@@ -1,10 +1,11 @@
-import React, { Component, Suspense } from 'react';
+import React, { Component, Suspense } from "react";
 
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
-import TitleCanvas from './Components/TitleCanvas/TitleCanvas';
-import SimpleDescription from './Components/SimpleDescription/SimpleDescription';
-import Navbar from './Components/Navbar/Navbar';
+import Box from "@material-ui/core/Box";
+import Container from "@material-ui/core/Container";
+import TitleCanvas from "./Components/TitleCanvas/TitleCanvas";
+import SimpleDescription from "./Components/SimpleDescription/SimpleDescription";
+import Navbar from "./Components/Navbar/Navbar";
+import Personal from "./Components/Personal/Personal";
 export class Main extends Component {
   render() {
     return (
@@ -15,6 +16,7 @@ export class Main extends Component {
           <TitleCanvas />
           <Container>
             <SimpleDescription />
+            <Personal />
             <Box my={2}>
               {[...new Array(50)]
                 .map(
@@ -23,7 +25,7 @@ export class Main extends Component {
                     Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
                     Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
                 )
-                .join('\n')}
+                .join("\n")}
             </Box>
           </Container>
         </Suspense>
