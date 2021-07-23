@@ -11,6 +11,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  imageContainer: {
+    // minHeight: "400px",
+    // minWidth: "400px",
+    padding: theme.spacing(2),
+  },
   body: {
     color: "#adb5bd",
   },
@@ -22,8 +27,8 @@ export default function Personal() {
 
   return (
     <div className={classes.root}>
-      <Grid container>
-        <Grid item xs={12} sm={6}>
+      <Grid container direction="row" alignItems="center">
+        <Grid item xs={12} sm={8}>
           <Typography variant="h1">Basically, me.</Typography>
           <Typography variant="h6" className={classes.body} gutterBottom>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
@@ -41,7 +46,7 @@ export default function Personal() {
             purus mi, a vehicula sapien varius ut.
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={4} className={classes.imageContainer}>
           <ImagesCarousel images={images} />
         </Grid>
       </Grid>
