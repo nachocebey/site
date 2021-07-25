@@ -3,17 +3,19 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import ImagesCarousel from "./Components/ImagesCarousel";
 import { makeStyles } from "@material-ui/core/styles";
-import Dummy1 from "../../../../assets/Images/Dummy1.png";
-import Dummy2 from "../../../../assets/Images/Dummy2.png";
-import Dummy3 from "../../../../assets/Images/Dummy3.png";
+// import Dummy1 from "../../../../assets/Images/Dummy1.png";
+// import Dummy2 from "../../../../assets/Images/Dummy2.png";
+// import Dummy3 from "../../../../assets/Images/Dummy3.png";
+import NachoLondon from "../../../../assets/Images/NachoLondon.jpg";
+import NachoMasia from "../../../../assets/Images/NachoMasia.jpg";
+import NachoNature from "../../../../assets/Images/NachoNature.jpg";
+import NachoScuba from "../../../../assets/Images/NachoScuba.jpg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
   imageContainer: {
-    // minHeight: "400px",
-    // minWidth: "400px",
     padding: theme.spacing(2),
   },
   body: {
@@ -23,12 +25,12 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Personal() {
   const classes = useStyles();
-  const images = [Dummy1, Dummy2, Dummy3];
+  const images = [NachoNature, NachoLondon, NachoMasia, NachoScuba];
 
   return (
     <div className={classes.root}>
       <Grid container direction="row" alignItems="center">
-        <Grid item xs={12} sm={8}>
+        <Grid item xs={12} md={8}>
           <Typography variant="h1">Basically, me.</Typography>
           <Typography variant="h6" className={classes.body} gutterBottom>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
@@ -46,7 +48,7 @@ export default function Personal() {
             purus mi, a vehicula sapien varius ut.
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={4} className={classes.imageContainer}>
+        <Grid item xs={12} md={4} className={classes.imageContainer}>
           <ImagesCarousel images={images} />
         </Grid>
       </Grid>
